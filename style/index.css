@@ -50,7 +50,7 @@ blockquote, q {
     body{
         font-size:1.8rem;
         color: #4f4f4f;
-        font-height:1.5;
+        line-height:1.5;
     }
     h1{
         font-size: 5rem;
@@ -147,4 +147,67 @@ blockquote, q {
         text-align:center;
         display:flex;
     }
-    
+
+    @media (max-width: 800px){
+        h1{
+            text-align: center;
+            margin-bottom: 0%;
+        }
+        .bar nav a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align:center;
+            padding: 1% 5%;
+            margin-left:40%;
+            margin-right: 40%;
+            margin-top: 1%;
+        }
+        #top{
+            display: block;
+        }
+        .text1{
+            text-align: center;
+            margin: 0 auto;
+
+        }
+        .text1 button{
+            margin-bottom: 1%;
+        }
+
+        .firstRow{
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
+        .firstRow .image{
+            width: 50%;
+            padding: 0
+        }
+        .secondRow{
+            display: flex;
+            flex-wrap: wrap; 
+            margin-top: 0 
+        }
+        .secondRow .image{
+            width: 50%;
+        }
+        .secondRow .image p{
+            margin-bottom: 9%;
+        }
+
+    }
+    @media (max-width: 500px){
+        .bar nav a{
+            text-align:center;
+            padding: 0 2%;
+        }
+        .firstRow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .secondRow{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
